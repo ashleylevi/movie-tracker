@@ -59,10 +59,10 @@ export class MovieDisplay extends Component {
             tracker
           </h1>
           <p className='user-greeting'>Hello, {user.name}</p>
-          <Link to={'/login'}>
+          <Link to={'/movie-tracker/login'}>
             <button className='sign-out-btn' onClick={signOut}>sign out</button>
           </Link>
-          <Link to={`/${buttonText}`}>
+          <Link to={`/movie-tracker/${buttonText}`}>
             <button className='toggle-favorites-btn' onClick={() => this.toggleFavorites()}>{ buttonText}</button>
           </Link>
         </header>

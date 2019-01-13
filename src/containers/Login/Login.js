@@ -71,7 +71,7 @@ export class Login extends Component {
         <div className='new-account-container'>
           <h3 className={`incorrect-login ${incorrectLogin && 'incorrect'}`}>username or password is incorrect</h3>
           <h3>Don't have an account?</h3>
-          <Link className='form-link' to='/signup' >Create New Account</Link>
+          <Link className='form-link' to='/movie-tracker/signup' >Create New Account</Link>
         </div>
       </div>
     )

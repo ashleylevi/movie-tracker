@@ -23,25 +23,25 @@ export class App extends Component {
         <Switch>
           <Route 
             exact
-            path='/' 
+            path='/movie-tracker/' 
             render={() => {
               if (!user.name) {
-                return <Redirect to='/login' />
+                return <Redirect to='/movie-tracker/login' />
               } else {
-                return <Redirect to='/trending' />
+                return <Redirect to='/movie-tracker/trending' />
               }
             }}
           />
           <Route
-            path='/login'
+            path='/movie-tracker/login'
             component={Login}
           />
           <Route
-            path='/signup'
+            path='/movie-tracker/signup'
             component={Signup}
           />
           <Route
-            path='/favorites'
+            path='/movie-tracker/favorites'
             render={() => {
               if (!user.name){
                 return <Redirect to='/login' />
@@ -51,7 +51,7 @@ export class App extends Component {
             }}
           />
           <Route
-            path='/trending'
+            path='/movie-tracker/trending'
             render={() => {
               if (!user.name){
                 return <Redirect to='/login' />
@@ -61,7 +61,7 @@ export class App extends Component {
             }}
           />
           <Route 
-            path='/error'
+            path='/movie-tracker/error'
             component={ErrorPage} />
         </Switch>
       </div>

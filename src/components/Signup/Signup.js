@@ -68,7 +68,7 @@ export default class Signup extends Component {
   render() {
     const { name, email, password, confirmPassword, validUser, formComplete, duplicateUser, passwordsMatch, validEmail} = this.state
     if (validUser) {
-     return <Redirect to='/login' />
+     return <Redirect to='/movie-tracker/login' />
     }
     return(
       <div className="sign-up-container">

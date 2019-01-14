@@ -37,7 +37,7 @@ export class Login extends Component {
   render() {
     if(this.state.validUser) {
       return (
-        <Redirect to='/' />
+        <Redirect to='/movie-tracker/' />
       )
     }
     const { email, password, incorrectLogin } = this.state
